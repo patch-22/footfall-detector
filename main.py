@@ -6,8 +6,8 @@ import time
 from imutils.video import VideoStream
 from itertools import count
 
-from twine.detection import MobileNetDetector
-from twine.processing import FootfallProcessor
+from twine_footfall.detection import MobileNetDetector
+from twine_footfall.processing import FootfallProcessor
 
 # Take video from the webcam
 vs = VideoStream(src=0).start()

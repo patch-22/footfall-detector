@@ -1,6 +1,6 @@
-from twine.tracking import Trackable, CentroidTracker
-from twine.detection import MobileNetDetector
-import twine.api as twine_api
+from twine_footfall.tracking import Trackable, CentroidTracker
+from twine_footfall.detection import MobileNetDetector
+import twine_footfall.api as twine_footfall_api
 
 import cv2
 import dlib
@@ -92,8 +92,8 @@ class FootfallProcessor:
 
 	def handle_in(self):
 		self.totalIn += 1
-		twine_api.report_entrance()	
+		twine_footfall_api.report_entrance()	
 	
 	def handle_out(self):
 		self.totalOut += 1
-		twine_api.report_exit()
+		twine_footfall_api.report_exit()

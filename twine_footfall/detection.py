@@ -10,7 +10,7 @@ class MobileNetDetector:
             "bottle", "bus", "car", "cat", "chair", "cow", "diningtable",
             "dog", "horse", "motorbike", "person", "pottedplant", "sheep",
             "sofa", "train", "tvmonitor"]
-        self.network = cv2.dnn.readNetFromCaffe('twine/model/MobileNetSSD_deploy.prototxt', 'twine/model/MobileNetSSD_deploy.caffemodel')
+        self.network = cv2.dnn.readNetFromCaffe('twine_footfall/model/MobileNetSSD_deploy.prototxt', 'twine_footfall/model/MobileNetSSD_deploy.caffemodel')
         self.target_class = 'person'
 
     def detect(self, frame, W, H):
